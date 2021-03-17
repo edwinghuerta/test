@@ -1,0 +1,30 @@
+<div class="app-container">
+  <app-navbar></app-navbar>
+  <div class="app-content">
+    <div class="header">
+      <p class="header-text">
+        Play the memory game and win Kanddys Vouchers that works like money.
+      </p>
+    </div>
+    <div class="grid">
+      <app-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)"></app-card>
+    </div>
+    <div class="player-indicators">
+      <span class="points-indicator">
+        {{points}} Points
+      </span>
+      <span class="moves-indicator">
+        {{tries}} Moves; {{minutes}}:{{showSeconds}}
+      </span>
+    </div>
+    <div class="footer">
+      <p class="footer-text">
+        Sponsored by Dos Bandidos Restaurants. Tulsa, OK.
+      </p>
+    </div>
+    <button class="get-voucher" (click)="getVoucher()" [disabled]="tries != 0">
+      Get ${{points}} Voucher
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+</div>

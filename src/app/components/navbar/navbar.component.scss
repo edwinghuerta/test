@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 45.58px;
+  padding: $navbarPadding;
+  background-color: $navbarBg;
+
+  & p {
+    color: #D8B952;
+    font-weight: bold;
+  }
+
+  & a {
+    color: $white;
+    font-size: $navbarFontSize;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+  }
+  & a:hover,
+  & a:active {
+    filter: brightness(0.9);
+  }
+}
