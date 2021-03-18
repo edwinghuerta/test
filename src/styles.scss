@@ -1,1 +1,21 @@
 @import "src/assets/scss/global";
+
+@font-face{
+  font-family: 'AvenirMedium';
+  src: url('../src/assets/fonts/AvenirNextCondensedMedium.ttf');
+}
+
+@font-face{
+  font-family: 'AvenirBold';
+  src: url('../src/assets/fonts/AvenirNextCondensedBold.ttf');
+}
+
+@font-face{
+  font-family: 'AvenirDemiBold';
+  src: url('../src/assets/fonts/AvenirNextCondensedDemiBold.ttf');
+}
+
+@font-face{
+  font-family: 'ZillaSlabRegular';
+  src: url('../src/assets/fonts/ZillaSlabRegular.ttf');
+}

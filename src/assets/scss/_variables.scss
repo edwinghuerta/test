@@ -1,5 +1,6 @@
 // Colors
-$navbarBg: #374246;;
+$navbarBg: rgba(55, 66, 70, 1);
+$NavbarGradient: linear-gradient(180deg, rgba(55, 66, 70, 1) 26%, rgba(55,66,70,0.7615541608146068) 48%, rgba(55,66,70,1) 69%);
 $white: #ffffff;
 $black: #000000;
 $body: #333333;
@@ -19,8 +20,8 @@ $cardPadding: 1.5rem 3rem;
 $cardVSeparation: 10px;
 
 //Text size
-$HeaderTextSize: 18px;
-$FooterTextSize: 13px;
+$HeaderTextSize: 17px;
+$FooterTextSize: 15px;
 
 //Buttons
 $ButtonRadius: 10px;

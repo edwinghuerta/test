@@ -31,7 +31,7 @@ export class AppComponent implements OnInit{
 
   matchedCount : number = 0;
 
-  points : number = 75;
+  points : number = 0;
 
   tries : number = 6;
 
@@ -104,6 +104,9 @@ export class AppComponent implements OnInit{
 
       if (nextState === 'matched') {
         this.matchedCount++;
+        this.points += 5;
+        console.log(this.matchedCount, this.points);
+
         this.tries--;
         if (this.matchedCount === this.cardImages.length) {
           this.restart();
@@ -113,7 +116,6 @@ export class AppComponent implements OnInit{
           this.timerSub.unsubscribe();
         }
       }else{
-        this.points -= 5;
         this.tries--;
         if (this.tries == 0) {
           this.timerSub.unsubscribe();

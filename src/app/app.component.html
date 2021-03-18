@@ -10,16 +10,13 @@
       <app-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)"></app-card>
     </div>
     <div class="player-indicators">
-      <span class="points-indicator">
-        {{points}} Points
-      </span>
-      <span class="moves-indicator">
+      <p class="moves-indicator">
         {{tries}} Moves; {{minutes}}:{{showSeconds}}
-      </span>
+      </p>
     </div>
     <div class="footer">
       <p class="footer-text">
-        Sponsored by Dos Bandidos Restaurants. Tulsa, OK.
+        Sponsored <ins>by Dos Bandidos Restaurants.</ins> Tulsa, OK.
       </p>
     </div>
     <button class="get-voucher" (click)="getVoucher()" [disabled]="tries != 0">

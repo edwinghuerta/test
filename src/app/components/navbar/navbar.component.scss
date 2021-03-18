@@ -6,22 +6,24 @@
   flex-direction: row;
   justify-content: space-between;
   height: 45.58px;
-  padding: $navbarPadding;
-  background-color: $navbarBg;
+  //padding: $navbarPadding;
+  background: $navbarBg;
+  background: $NavbarGradient;
 
   & p {
     color: #D8B952;
     font-weight: bold;
   }
 
-  & a {
-    color: $white;
-    font-size: $navbarFontSize;
-    text-decoration: none;
-    transition: all 200ms ease-in-out;
+  & .titleleft{
+    font-family: 'AvenirBold';
+    margin-left: 61px;
+    font-size: 15px;
   }
-  & a:hover,
-  & a:active {
-    filter: brightness(0.9);
+
+  & .titleright{
+    font-family: 'AvenirDemiBold';
+    font-size: 14px;
+    margin-right: 75px;
   }
 }
